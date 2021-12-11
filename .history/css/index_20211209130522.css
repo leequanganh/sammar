@@ -1,0 +1,135 @@
+*{
+padding: 0;
+margin: 0;
+border: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+body{
+    /* height: 9000px;
+    background-color: antiquewhite; */
+}
+/* header-start  */
+.header{
+    display: flex;
+    justify-content: center; 
+    position: fixed;
+        width: 100%;  
+        top: 0;
+    z-index: 1;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0,0.2);
+    overflow: hidden;
+    transition: 0.5s;
+    background: rgba(0,0,0,0);
+}
+.header__contain{
+    width: 77%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_nav {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+ul{
+    display: flex;
+}
+.header_nav ul li{
+    transition: 0.3s;
+    padding: 55px 16px ;
+    list-style: none;
+}
+.header_nav li a {
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 600; 
+}
+.header_nav li a span{
+    line-height: 20px;
+}
+.header_nav li:hover{
+    cursor: pointer;
+}
+.header_nav li a {
+    display: inline-block;
+}
+span{
+    display: inline-block;
+}
+.header_nav li:hover a span  {
+   animation-name: upToDown;
+   animation-duration: 0.5s;
+   color: #f55f8d;
+   cursor: pointer;
+}
+.header_nav li:hover a i{
+   color: #f55f8d;
+}
+.header_nav li a i{
+    font-size: 9px;
+}
+.btn{
+    margin-left: 20px;
+}
+.btn a{
+    padding: 20px 35px;
+    color: white;
+    line-height: 18px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 30px;
+    border-width: 1px;
+    background-image: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+    background-position: left bottom;
+    background-size: 200%;
+    transition: 0.5s;
+}
+.btn:hover a{
+    background-position: right center;
+}
+/* header-end  */
+/* banner start  */
+.banner {
+    background-image: url(../img/pic2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    padding-top: 130px;
+    display: flex;
+    flex-direction: row;
+}
+.banner__contain{
+    display: inline-flex;
+    justify-content: center;
+    width: 77%;
+}
+.banner_img{}
+.banner_text{}
+.banner_img{
+    position: relative;
+}
+.banner_img img::after{
+    position: absolute;
+    background-image: url(../img/pic1.png);
+}
+/* banner end  */
+/* animate  */
+@keyframes upToDown {
+    49% {
+      transform: translateY(100%);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    51% {
+      opacity: 1;
+    }
+  }
+/* animate  */

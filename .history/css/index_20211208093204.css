@@ -1,0 +1,16 @@
+*{
+padding: 0;
+margin: 0;
+border: 0;
+box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__contain{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+.hea

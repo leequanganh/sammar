@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+            <!-- /////////////////// -->
+    <link rel="stylesheet" href="../css/flaticon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                 <!-- ////////////////////// -->
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- header start  -->
+    <div class="header" id="navbar">
+        
+        <div class="header__contain">
+            <div class="header_logo" id="logo">
+                <img src="../img/logo-2.png" alt="">
+            </div>
+            <div class="header_nav">
+                <ul>
+                    <li> <a href=""> <span>Home</span>
+                        <i class="fas fa-chevron-down"></i></a> </li>
+                    <li> <a href=""><span>Pages</span>
+                        <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href=""> <span>Services</span>
+                        <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href=""> <span>Post Layout</span>
+                        <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href=""><span>Blog</span>
+                        <i class="fas fa-chevron-down"></i></a></li>
+                    <li><a href=""><span>Contact Us</span>
+                        <i class="fas fa-chevron-down"></i></a></li>
+                </ul>
+                <div class="btn">
+                    <a href="">GET A QUOTE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- header end  -->
+<!-- banner start  -->
+    <div class="banner">
+        <div class="banner__contain">
+            <div class="banner_text">
+                <h4>We are The Best</h4>
+                <h1>Freelance Product <br> Designer Running</h1>
+                <p>We develop the relationships that underpin the next phase in your <br>
+                    organisation’s growth.</p>
+                <span><i class="las la-check"></i>Master's degree in designing</span>
+                <span><i class="las la-check"></i>Outstanding mobile design</span>
+                <div class="btn"><a href="">GET STARTED</a></div>
+
+            </div>
+            <div class="banner_img">
+                <div class="img_content">
+                    <img src="../img/pic3_1.png" alt="">
+                </div>
+                <div class="overlay">
+                    <img src="../img/pic1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- banner end  -->
+<!-- service-start  -->
+<div class="service">
+    <div class="service__contain">
+        <div class="service_tile">
+            <p>What We Do Best</p>
+            <h2>Our Digital Services</h2>
+        </div>
+        <div class="service_list">
+            <div class="service_item">
+                <img src="../img/pic1_3.jpg" alt="">
+                <h3>Web Development</h3>
+                <p>Vestibulum a efficitur ex. Ut iaculis dapibus <br>iaculis. Praesent lacus magna, rhoncus <br>quis magna quis.</p>
+            </div>
+            <div class="service_item">
+                <img src="../img/pic1_3.jpg" alt="">
+                <h3>Growth Tracking</h3>
+                <p>Vestibulum a efficitur ex. Ut iaculis dapibus <br>iaculis. Praesent lacus magna, rhoncus <br>quis magna quis.</p>
+            </div>
+            Growth Tracking
+        </div>
+    </div>
+   
+</div>
+<!-- service-end  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop()){
+                    $('header').addClass('sticky');
+                }else{
+                    $('header').removeClass('sticky');
+                }
+            })
+        });
+    </script>
+</body>
+</html>

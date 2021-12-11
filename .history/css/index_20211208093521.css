@@ -1,0 +1,27 @@
+*{
+padding: 0;
+margin: 0;
+border: 0;
+box-sizing: border-box;
+}
+body{
+    background-image: url();
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__contain{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+.header_logo{
+   
+}
+.header_nav{
+    display: flex;
+}
+.header_nav ul li{
+    display: inline-block;
+}
